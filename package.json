@@ -1,6 +1,6 @@
 {
   "name": "wechat-enterprise-api",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "微信公共平台企业号版本Node API库",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "weixin",
     "wechat",
-    "enterprise"
+    "enterprise",
+    "api"
   ],
   "dependencies": {
     "formstream": ">=0.0.8",
