@@ -41,20 +41,19 @@ The MIT license.
 ## 交流群
 QQ群：157964097，使用疑问，开发，贡献代码请加群。
 
-最后更新：2014-12-26日的release。
-
 ## 感谢
 感谢以下贡献者：
 
 ```
 
  project  : wechat-enterprise-api
- repo age : 12 hours
- active   : 1 days
- commits  : 2
- files    : 28
+ repo age : 4 weeks
+ active   : 6 days
+ commits  : 10
+ files    : 29
  authors  :
-     2  Jackson Tian  100.0%
+     7  Jackson Tian  70.0%
+     3  Nick Ma       30.0%
 
 ```
 
