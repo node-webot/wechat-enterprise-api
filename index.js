@@ -11,5 +11,7 @@ API.mixin(require('./lib/api_message'));
 API.mixin(require('./lib/api_tag'));
 // 用户管理
 API.mixin(require('./lib/api_user'));
+// JS SDK
+API.mixin(require('./lib/api_js'));
 
 module.exports = API;
