@@ -13,4 +13,6 @@ API.mixin(require('./lib/api_tag'));
 API.mixin(require('./lib/api_user'));
 // IP段查询
 API.mixin(require('./lib/api_ip'));
+// JS SDK
+API.mixin(require('./lib/api_js'));
 module.exports = API;
