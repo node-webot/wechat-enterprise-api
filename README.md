@@ -17,12 +17,61 @@ wechat enterprise api
 - 标签管理
 - 媒体文件
 - OAuth API（授权、获取基本信息）
+- JS SDK 授权
+- 管理企业号应用
+- 通讯录批量操作接口
+
 
 ## 详细文档
-- [文档主页](http://node-webot.github.io/wechat-enterprise-api/index.html)
-- [API文档](http://node-webot.github.io/wechat-enterprise-api/api.html)
+- [文档主页](http://doxmate.cool/node-webot/wechat-enterprise-api/index.html)
+- [API文档](http://doxmate.cool/node-webot/wechat-enterprise-api/api.html)
 - 代码[测试覆盖率](http://node-webot.github.io/wechat-enterprise-api/coverage/index.html)
 - [新手上路](http://node-webot.github.io/wechat-enterprise-api/Getting%20start.html)
+
+### 通过代理服务器访问
+
+#### 场景
+
+对于大规模的集群部署模式，为了安全和速度，会有一些负载均衡的节点放在内网的服务器上（即负载均衡的节点与主结点通过内网连接，并且内网服务器上没有外网的IP）。这时，就需要配置代理服务器来使内网的机器可以有限度的访问外网的资源。例如：微信套件中的各种主动调用接口。
+
+如何架设代理服务器在这里不做赘述，一般推荐使用squid 3，免费、快速、配置简单。
+
+#### 技术原理
+
+由于需要访问的微信API服务器是https协议，所以普通的http代理模式不能使用。
+而一般都是http协议的代理服务器。
+我们要实现的就是通过http代理通道来走https的请求。
+
+基本的步骤是2步：
+
+- 连接到代理服务器，发送CONNECT命令，打开一个TCP连接。
+- 使用上一步打开的TCP连接，发送https的请求。
+
+#### 实现步骤
+
+一、下载[node-tunnel](https://github.com/koichik/node-tunnel) 注意：npm上的版本较老，不支持node v0.10以上的版本。
+
+二、使用 httpsOverHttp 这个agent。
+
+三、将agent配置给urllib，通过urllib的beforeRequest这个方法。
+
+```js
+var tunnel = require('tunnel');
+
+var agent = tunnel.httpsOverHttp({
+  proxy: {
+    host: 'proxy_host_ip',
+    port: 3128
+  }
+});
+
+api.setOpts({
+    beforeRequest:function(options){
+        options.agent = agent;
+    }
+});
+
+```
 
 ## Show cases
 ### Node.js API自动回复
@@ -47,13 +96,13 @@ QQ群：157964097，使用疑问，开发，贡献代码请加群。
 ```
 
  project  : wechat-enterprise-api
- repo age : 5 weeks
- active   : 8 days
- commits  : 12
- files    : 29
+ repo age : 5 months
+ active   : 15 days
+ commits  : 21
+ files    : 33
  authors  :
-     8  Jackson Tian  66.7%
-     4  Nick Ma       33.3%
+    12	Jackson Tian            57.1%
+     9	Nick Ma                 42.9%
 
 ```
 

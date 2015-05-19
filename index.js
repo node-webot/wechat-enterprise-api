@@ -15,4 +15,8 @@ API.mixin(require('./lib/api_user'));
 API.mixin(require('./lib/api_ip'));
 // JS SDK
 API.mixin(require('./lib/api_js'));
+// 企业号应用
+API.mixin(require('./lib/api_agent'));
+// 通讯录批量操作接口
+API.mixin(require('./lib/api_batch'));
 module.exports = API;
