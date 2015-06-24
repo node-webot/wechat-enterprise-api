@@ -96,13 +96,14 @@ QQ群：157964097，使用疑问，开发，贡献代码请加群。
 ```
 
  project  : wechat-enterprise-api
- repo age : 5 months
- active   : 15 days
- commits  : 21
+ repo age : 7 months
+ active   : 18 days
+ commits  : 25
  files    : 33
  authors  :
-    12	Jackson Tian            57.1%
-     9	Nick Ma                 42.9%
+    15  Jackson Tian  60.0%
+     8  Nick Ma       32.0%
+     2  Qun Lin       8.0%
 
 ```
 
