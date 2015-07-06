@@ -20,6 +20,7 @@ wechat enterprise api
 - JS SDK 授权
 - 管理企业号应用
 - 通讯录批量操作接口
+- 永久素材管理接口
 
 
 ## 详细文档
@@ -94,15 +95,17 @@ QQ群：157964097，使用疑问，开发，贡献代码请加群。
 感谢以下贡献者：
 
 ```
+<<<<<<< HEAD
 
  project  : wechat-enterprise-api
- repo age : 5 months
- active   : 15 days
- commits  : 21
- files    : 33
+ repo age : 7 months
+ active   : 20 days
+ commits  : 32
+ files    : 34
  authors  :
-    12	Jackson Tian            57.1%
-     9	Nick Ma                 42.9%
+    18	Jackson Tian            56.2%
+    12	Nick Ma                 37.5%
+     2	Qun Lin                 6.2%
 
 ```
 

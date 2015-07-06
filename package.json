@@ -1,6 +1,6 @@
 {
   "name": "wechat-enterprise-api",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "微信公共平台企业号版本Node API库",
   "main": "index.js",
   "scripts": {

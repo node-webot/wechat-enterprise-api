@@ -19,4 +19,6 @@ API.mixin(require('./lib/api_js'));
 API.mixin(require('./lib/api_agent'));
 // 通讯录批量操作接口
 API.mixin(require('./lib/api_batch'));
+// 永久素材管理接口
+API.mixin(require('./lib/api_material'));
 module.exports = API;
