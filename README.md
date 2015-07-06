@@ -95,7 +95,6 @@ QQ群：157964097，使用疑问，开发，贡献代码请加群。
 感谢以下贡献者：
 
 ```
-<<<<<<< HEAD
 
  project  : wechat-enterprise-api
  repo age : 7 months
