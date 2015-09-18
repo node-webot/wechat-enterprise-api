@@ -21,4 +21,6 @@ API.mixin(require('./lib/api_agent'));
 API.mixin(require('./lib/api_batch'));
 // 永久素材管理接口
 API.mixin(require('./lib/api_material'));
+// 摇一摇接口
+API.mixin(require('./lib/api_shake'));
 module.exports = API;
